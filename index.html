@@ -1,0 +1,292 @@
+<!DOCTYPE html> <!--22161051채예나-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+.clear {
+  clear:both;
+}
+
+
+
+.slider{
+
+    width: 1940px;
+    height: 890px;
+    position: relative;
+    margin: 0 auto;
+}
+.slider input[type=radio]{
+    display: none;
+}
+
+ul.imgs{
+    padding: 0;
+    margin: 0;
+}
+ul.imgs li{
+    position: absolute;
+    opacity: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullets{
+    position: absolute;
+    left: 50%; /* 가로로 가운데 정렬 */
+    transform: translateX(-50%);
+    bottom: 50px; /* 슬라이드 밑에서 20px 간격 띄움 */
+    z-index: 2; /* 슬라이드 위에 보이도록 레이어 순위를 높임 */
+}
+.bullets label{
+    display: inline-block; /* 한 줄로 불릿 나열*/
+    border-radius: 50%; /* 원형 불릿으로 처리 */
+    background-color: rgba(0,0,0,0.55);
+    width: 20px; /* 불릿 너비 */
+    height: 20px; /* 불릿 높이 */
+    cursor: pointer;
+}
+
+
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
+    background-color: white;
+}
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
+    background-color: #fff;
+}
+.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
+    background-color: #fff;
+}
+
+
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
+}
+
+ul.imgs li{
+    position: absolute;
+    opacity: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition-delay: 0.9s; /* 트랜지션 지연 시간 지정 */
+}
+
+
+body {
+  font-family: 돋움;
+  font-size: 14px;
+  color: black;
+}
+
+
+li {
+  list-style-type: none;
+  color: white;
+}
+
+
+table {
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+
+
+
+header {
+  width: 1900px;
+  height: 100px;
+  margin: 0 auto;
+
+color: black;
+ border: solid 1px #cccccc;
+}
+
+
+
+#logo {
+  float: left;
+  margin: 10px 30px 0 20px;
+
+}
+
+nav {
+  width: 1900px;
+height: 105px;
+margin-top: 0;
+background-color: black;
+
+}
+
+nav li {
+  float: right;
+
+}
+
+
+
+footer {
+  width: 200%;
+  height: 200px;
+  margin-top: 30px;
+  float: left;
+  background-color:black;
+}
+
+#footer_box {
+  width: 1900px;
+  height: 150px;
+  float: left:
+  margin: 0 auto;
+
+}
+
+#footer_logo {
+  float: left;
+  margin: 50px 120px; 0 30px;
+  color: white;
+
+}
+
+#address {
+  float:right;
+  margin: 50px 450px 0 0;
+  color: white;
+
+}
+
+
+    </style>
+  </head>
+
+
+  <body>
+
+    <body bgcolor='gray'>
+
+      </body>
+
+<header>
+  <div id='logo'>
+    <a href='index.html'><img src='logo.png' width= 160;></a>
+  </div>
+
+
+
+<nav>
+<ul>
+<li><a href='3-video.html'><img src='video.png'></a></li>
+<a href='2-music.html'><li><img src='music.png'></li></a>
+<li><a href='1-members.html'><img src='members.png'></a></li>
+
+</ul>
+
+</nav>
+</nav>
+
+
+</header>
+
+
+
+<section id='main_img'>
+
+</section>
+
+
+
+    <div class="slider">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <ul id="imgholder" class="imgs">
+            <li><img src="./pt1.png"></li>
+            <li><img src="./pt2.png"></li>
+            <li><img src="./pt3.jpg"></li>
+            <li><img src="./pt4.jpg"></li>
+        </ul>
+        <div class="bullets">
+            <label for="slide1">&nbsp;</label>
+            <label for="slide2">&nbsp;</label>
+            <label for="slide3">&nbsp;</label>
+            <label for="slide4">&nbsp;</label>
+        </div>
+    </div>
+
+
+
+  <div id='main_contents'>
+
+    <div id='main_contents'>
+
+
+      <table>
+      <tr>
+       <td><img alt="" src="ptx1.jpg" /></td> <td><img alt="" src="ptx2.jpg" /></td> <td><img alt="" src="ptx3.jpg" /></td>  <td><img alt="" src="ptx4.jpg" /></td>
+      <tr>
+    </table>
+
+
+
+      </div>
+
+  </div>
+</section>
+
+<div class='clear'>
+</div>
+
+
+
+
+<footer>
+  <div id='footer_box'>
+    <div id='footer_logo'>
+      <a href='index.html'><img src='logo.png'width= 160;></a>
+    </div>
+
+    <ul id='address'>
+      <li>PTX official- https://www.youtube.com/pentatonix</li>
+      <li>Three-time Grammy® Award-winning and multi-Platinum-selling Pentatonix has sold nearly 10 million albums worldwide and performed<br>
+        for hundreds of thousands of fans at their sold out shows across the globe. Their YouTube channel boasts more than 14.5 million subscribers,<br>
+        yielding over 3 billion video views. Their 2015 self-titled album is certified gold after debuting #1 on Billboard’s 200.</li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+  </body>
+</html>
